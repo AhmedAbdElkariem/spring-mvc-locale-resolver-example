@@ -57,8 +57,8 @@ public class MyController {
         users.add(new User("Rihan Kumar", "Arun", "Kumar", "Anu.png", "Aryan", "F",
                 "Palampur"));
         model.addAttribute("userList", users);
-        return "displayTag";
-
+        addCommonAttributes(model);
+        return "defBody";
     }
 
     private void addCommonAttributes(Model model) {

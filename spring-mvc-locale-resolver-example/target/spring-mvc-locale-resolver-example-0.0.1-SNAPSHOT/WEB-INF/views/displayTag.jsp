@@ -68,7 +68,7 @@
 
     <body>
 
-        <display:table id="txt"  pagesize="3"  requestURI=""  name="userList">
+        <display:table  pagesize="3"  requestURI=""  name="userList">
             <display:column property="name" ></display:column>
             <display:column title="insert" ><input type="text"/></display:column>  
             <display:column property="lastName"></display:column>
@@ -76,10 +76,6 @@
             <display:column property="modernName"></display:column>
             <display:column property="section"></display:column>
             <display:column property="address"></display:column>
-             
-
-
-          
         </display:table>
 
     </body>

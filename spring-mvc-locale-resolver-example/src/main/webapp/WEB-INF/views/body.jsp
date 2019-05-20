@@ -1,4 +1,6 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://displaytag.sf.net" prefix="display" %>
+
 
 <div role="main" class="container">
     <div class="jumbotron">
@@ -47,6 +49,16 @@
                 <td>8</td>
             </tr>
         </table>
+
+        <display:table class="table-direction" id="txt"  pagesize="3"  name="userList">
+            <display:column property="name" ></display:column>
+            <display:column title="insert" ><input type="text"/></display:column>  
+            <display:column property="lastName"></display:column>
+            <display:column property="nickName"></display:column>
+            <display:column property="modernName"></display:column>
+            <display:column property="section"></display:column>
+            <display:column property="address"></display:column>
+        </display:table>
     </div>
 </div>
 
@@ -111,7 +123,7 @@
             </div>
             <div id="userDetails" class="modal-body">
                 <!-- write details here -->
-                
+
                 <img src="${pageContext.request.contextPath}/${userImg}" class="img-position" alt="user"/>
             </div>
             <div class="modal-footer">
